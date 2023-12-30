@@ -1,25 +1,5 @@
 #Footer {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10rem;
-  padding-right: 10rem;
-  margin-top: 2rem;
-}
-
-.footerHeaderCol {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.footerHeaderCol:nth-child(4) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.footerHeader {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
 }
 
 .footerBottom {
@@ -30,6 +10,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 720px) {
+  .footerNav {
+    align-items: center;
+  }
 }
 
 .footerLogoImg {

@@ -1,4 +1,4 @@
-import './imagesRow.css';
+import "./imagesRow.css";
 
 type ImagesRowProps = {
   imageUrls: string[];
@@ -6,7 +6,7 @@ type ImagesRowProps = {
 
 const ImagesRow: React.FC<ImagesRowProps> = ({ imageUrls }) => {
   return (
-    <div className="images-row flex flex-wrap justify-content-center">
+    <div className="grid grid-cols-8 w-full justify-items-center">
       {imageUrls.map(
         (url: string, index: number) =>
           index < 8 && (

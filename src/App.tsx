@@ -41,11 +41,9 @@ function App() {
   ]);
 
   return (
-    <>
-      <main id="App">
-        <RouterProvider router={router} />
-      </main>
-    </>
+    <div id="App">
+      <RouterProvider router={router} />
+    </div>
   );
 }
 

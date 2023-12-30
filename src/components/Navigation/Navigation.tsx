@@ -6,7 +6,7 @@ const Navigation: React.FC = () => {
   return (
     <>
       <div id="Navigation">
-        <section id="NavigationHeader">
+        <div id="NavigationHeader">
           <Link
             to="/#"
             className="mainLogoContainer">
@@ -20,12 +20,12 @@ const Navigation: React.FC = () => {
               <span>TECHNOLOGIES</span>
             </div>
           </Link>
-        </section>
-        <section id="NavigationHeaderBottom">
+        </div>
+        <div id="NavigationHeaderBottom">
           <Link to="/">Strona główna</Link>
           <Link to="/rozwiazania">Rozwiązania</Link>
           <Link to="/kontakt">Kontakt</Link>
-        </section>
+        </div>
       </div>
     </>
   );

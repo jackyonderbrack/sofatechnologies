@@ -9,19 +9,20 @@
 
 #Header {
   position: relative;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  height: 50dvh;
+  display: flex;
+  align-items: center;
 }
 
 .headerContent {
-  margin-left: 6rem;
+  margin-left: 6dvw;
 }
 
 .headerPicture {
-  animation: slide-up 3.5s forwards;
-  z-index: -1;
   position: absolute;
-  right: 4rem;
-  bottom: 2rem;
-  width: 40rem;
+  animation: slide-up 3.5s forwards;
+  top: -4rem;
+  right: 0;
+  z-index: -1;
+  width: 60dvw;
 }

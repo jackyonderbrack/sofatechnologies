@@ -1,11 +1,10 @@
 #Navigation {
+  background-color: #242424;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #242424;
-  place-items: center;
-  z-index: 100;
 }
 
 #NavigationHeader {
@@ -15,7 +14,6 @@
 
 nav {
   display: flex;
-  width: 100%;
   justify-content: space-between;
 }
 
@@ -47,6 +45,7 @@ nav {
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
+  padding: 1rem;
 }
 
 #NavigationHeaderBottom {
@@ -55,4 +54,6 @@ nav {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.205);
   border-radius: 2rem 2rem 0 0;
+  gap: 2rem;
+  padding: 0.5rem;
 }

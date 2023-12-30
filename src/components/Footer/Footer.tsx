@@ -15,7 +15,7 @@ const Footer = () => {
     <footer
       id="Footer"
       className="background-top">
-      <section className="footerHeader">
+      <section className="footerHeader grid grid-cols-4 justify-items-center align-items-center gap-2 px-4 py-2">
         <div className="footerHeaderCol">
           <Link
             to="/#"
@@ -32,15 +32,13 @@ const Footer = () => {
           </Link>
         </div>
         <div className="footerHeaderCol">
-          <h3>Nawigacja</h3>
-          <nav className="flex flex-col">
+          <nav className="footerNav flex flex-col">
             <Link to="/">Strona główna</Link>
             <Link to="/rozwiazania">Rozwiązania</Link>
             <Link to="/kontakt">Kontakt</Link>
           </nav>
         </div>
         <div className="footerHeaderCol">
-          <h3>Socials </h3>
           <div className="social_icons">
             <div className="socialIconContainer">
               <img

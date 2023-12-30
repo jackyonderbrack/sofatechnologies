@@ -77,20 +77,13 @@ const HomePage = () => {
               <br />
               od podstaw
             </h1>
-            <div className="my-3">
-              {/* <Button
-                  linkTo="/solutions"
-                  buttonText="Rozwiązania"
-                  theme="btn-primary"
-                /> */}
-            </div>
           </div>
         }
         imgUrl={EarthImg}
       />
       <section
         id="CategoryBoxes"
-        className="w-full gap-2 grid grid-cols-4 justify-content-between">
+        className="grid grid-cols-4 gap-1">
         {_homeContents_ImageBox.map((item, index) => (
           <ImageBox
             key={index}
@@ -100,7 +93,7 @@ const HomePage = () => {
           />
         ))}
       </section>
-      <section className="background-top my-4 py-4">
+      <section className="background-top my-1 py-2">
         <div className="flex flex-col justify-content-center align-items-center">
           <h2>
             Sprawdź niektóre nasze <span className="text-gradient">realizacje</span>
@@ -112,7 +105,7 @@ const HomePage = () => {
           </p>
           <h4>Wybierz i zobacz nasze projekty na żywo</h4>
         </div>
-        <div className="flex flex-wrap justify-content-center gap-2 my-4">
+        <div className="grid grid-cols-4 justify-items-center gap-2">
           <Card
             title="Gentleman Shop"
             description="SKLEP I BLOG"
@@ -164,7 +157,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="w-full background-top my-4 py-4">
+      <section className="w-full background-top py-4">
         <div className="flex flex-col align-items-center">
           <Title
             gradientHeader="Nasi klienci"
