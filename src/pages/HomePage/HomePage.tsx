@@ -19,7 +19,7 @@ import Partner5 from "../../assets/partners/partner-mensworldbarbershop-sofatech
 import Partner6 from "../../assets/partners/partner-metkom-sofatechnologies.png";
 import Partner7 from "../../assets/partners/partner-natarasie-sofatechnologies.png";
 import Partner8 from "../../assets/partners/partner-vending4all-sofatechnologies.png";
-// Projects
+
 // Components
 import ImageBox from "../../components/ImageBox/ImageBox";
 import Title from "../../components/Title/Title";
@@ -27,8 +27,8 @@ import ImagesRow from "../../components/ImageRow/ImageRow";
 import ResponsiveParallaxBanner from "../../components/ResponsiveParallaxBanner/ResponsiveParallaxBanner";
 import Card from "../../components/Card/Card";
 import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 
+// Images
 import PortfolioGentlemanShopImg from "../../assets/portfolio/porfolio-gentlemanshop-sofatechnologies.png";
 import PortfolioRestauracjaLesnaPerlaImg from "../../assets/portfolio/porfolio-lesnaperla-main-sofatechnologies.png";
 import PorftolioNatarasieImg from "../../assets/portfolio/porfolio-natarasie-sofatechnologies.png";
