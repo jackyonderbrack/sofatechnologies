@@ -7,8 +7,7 @@ import InstagramSocialHover from "../../assets/socials/instagram_icon_dark_hover
 import GithubSocial from "../../assets/socials/github_icon_dark.png";
 import GithubSocialHover from "../../assets/socials/github_icon_dark_hover.png";
 
-import { Link, NavLink } from "react-router-dom";
-import ContactPage from "../../pages/ContactPage/ContactPage";
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 
 const Footer = () => {
