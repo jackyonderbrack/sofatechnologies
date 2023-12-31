@@ -6,12 +6,10 @@
 }
 
 form {
-  height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
+  align-items: center;
 }
 
 form .submitArea {
@@ -21,13 +19,14 @@ form .submitArea {
 
 form input,
 form textarea {
+  border: 1px solid transparent;
   background-color: transparent;
   color: var(--text-color);
-  border: 1px solid var(--primary-light-color);
-  border-radius: var(--border-radius);
+  border-bottom: 1px solid var(--primary-light-color);
   text-align: left;
   padding: var(--padding);
-  margin-bottom: 1rem;
+  display: flex;
+  margin-bottom: 2rem;
 }
 
 form input:focus,
@@ -39,4 +38,16 @@ form textarea:focus {
 form ::placeholder {
   color: var(--primary-text-color);
   opacity: 0.7;
+}
+
+.input-field {
+  position: relative;
+}
+
+.error-message {
+  color: var(--warning-color);
+  position: absolute;
+  top: -0.5rem;
+  margin: 0 auto;
+  font-size: 0.5rem;
 }

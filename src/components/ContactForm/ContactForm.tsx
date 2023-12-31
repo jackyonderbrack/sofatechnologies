@@ -1,24 +1,9 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { useContactFormik } from "../../utils/useFormikConfig";
 
 const ContactForm: React.FC = () => {
-  const [formData, setFormData] = useState({
-    contactFormClientName: "",
-    contactFormClientEmail: "",
-    contactFormMessage: "",
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const formik = useContactFormik(async (formData) => {
     try {
       const response = await fetch(`https://sofatechnologies.com/api/contact-form/send-email`, {
         method: "POST",
@@ -37,46 +22,58 @@ const ContactForm: React.FC = () => {
     } catch (error) {
       console.error("Błąd podczas wysyłania formularza:", error);
     }
-  };
+  });
 
   return (
     <>
-      <Formik
-        initialValues={{
-          contactFormClientName: "",
-          contactFormClientEmail: "",
-          contactFormMessage: "",
-        }}
-        // Możesz dodać walidację tutaj, jeśli jest potrzebna
-        onSubmit={async (values, { setSubmitting }) => {
-          // Logika wysyłania formularza
-        }}>
-        {({ isSubmitting }) => (
-          <Form>
-            <Field
-              type="text"
-              name="contactFormClientName"
-              placeholder="Jak się nazywasz?"
-            />
-            {/* Tutaj możesz dodać ErrorMessage dla każdego pola, jeśli jest potrzebna walidacja */}
-            <Field
-              type="email"
-              name="contactFormClientEmail"
-              placeholder="Twój e-mail"
-            />
-            <Field
-              as="textarea"
-              name="contactFormMessage"
-              placeholder="O co chcesz zapytać?"
-            />
-            <button
-              type="submit"
-              disabled={isSubmitting}>
-              Wyślij
-            </button>
-          </Form>
-        )}
-      </Formik>
+      <form onSubmit={formik.handleSubmit}>
+        <div className="input-field">
+          <input
+            type="text"
+            name="contactFormUser"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.contactFormUser}
+            placeholder="Jak się nazywasz?"
+          />
+          {formik.touched.contactFormUser && formik.errors.contactFormUser ? (
+            <p className="error-message">{formik.errors.contactFormUser}</p>
+          ) : null}
+        </div>
+        <div className="input-field">
+          <input
+            type="email"
+            name="contactFormEmail"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.contactFormEmail}
+            placeholder="Twój e-mail"
+          />
+          {formik.touched.contactFormEmail && formik.errors.contactFormEmail ? (
+            <p className="error-message">{formik.errors.contactFormEmail}</p>
+          ) : null}
+        </div>
+        <div className="input-field">
+          <textarea
+            name="contactFormMessage"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.contactFormMessage}
+            placeholder="O co chcesz zapytać?"
+          />
+          {formik.touched.contactFormMessage && formik.errors.contactFormMessage ? (
+            <p className="error-message">{formik.errors.contactFormMessage}</p>
+          ) : null}
+        </div>
+
+        <div className="submitArea">
+          <button
+            type="submit"
+            className="btn-secondary">
+            Wyślij
+          </button>
+        </div>
+      </form>
     </>
   );
 };
