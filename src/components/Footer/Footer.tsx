@@ -9,6 +9,7 @@ import GithubSocialHover from "../../assets/socials/github_icon_dark_hover.png";
 
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
+import PrivacyPolicy from "../PrivacyPolicy/PrivacyPolicy";
 
 const Footer = () => {
   return (
@@ -92,7 +93,9 @@ const Footer = () => {
           />
         </div>
       </section>
-      <section className="footerBottom"></section>
+      <section className="footerBottom px-4">
+        <PrivacyPolicy />
+      </section>
     </footer>
   );
 };

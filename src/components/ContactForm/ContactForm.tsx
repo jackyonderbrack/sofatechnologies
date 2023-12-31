@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -19,7 +20,7 @@ const ContactForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await fetch(`${window.location.origin}/api/contact-form/send-email`, {
+      const response = await fetch(`https://sofatechnologies.com/api/contact-form/send-email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,38 +40,44 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="contactFormClientName"
-        onChange={handleChange}
-        value={formData.contactFormClientName}
-        placeholder="Jak się nazywasz?"
-      />
-
-      <input
-        type="email"
-        name="contactFormClientEmail"
-        onChange={handleChange}
-        value={formData.contactFormClientEmail}
-        placeholder="Twój e-mail"
-      />
-
-      <textarea
-        name="contactFormMessage"
-        onChange={handleChange}
-        value={formData.contactFormMessage}
-        placeholder="O co chcesz zapytać?"
-      />
-
-      <div className="submitArea">
-        <button
-          type="submit"
-          className="btn-secondary">
-          Wyślij
-        </button>
-      </div>
-    </form>
+    <>
+      <Formik
+        initialValues={{
+          contactFormClientName: "",
+          contactFormClientEmail: "",
+          contactFormMessage: "",
+        }}
+        // Możesz dodać walidację tutaj, jeśli jest potrzebna
+        onSubmit={async (values, { setSubmitting }) => {
+          // Logika wysyłania formularza
+        }}>
+        {({ isSubmitting }) => (
+          <Form>
+            <Field
+              type="text"
+              name="contactFormClientName"
+              placeholder="Jak się nazywasz?"
+            />
+            {/* Tutaj możesz dodać ErrorMessage dla każdego pola, jeśli jest potrzebna walidacja */}
+            <Field
+              type="email"
+              name="contactFormClientEmail"
+              placeholder="Twój e-mail"
+            />
+            <Field
+              as="textarea"
+              name="contactFormMessage"
+              placeholder="O co chcesz zapytać?"
+            />
+            <button
+              type="submit"
+              disabled={isSubmitting}>
+              Wyślij
+            </button>
+          </Form>
+        )}
+      </Formik>
+    </>
   );
 };
 
