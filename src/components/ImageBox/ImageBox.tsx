@@ -2,7 +2,7 @@ import "./imageBox.css";
 type ImageBoxProps = {
   imgsrc: string;
   heading: string;
-  content: string;
+  content: React.ReactNode;
 };
 
 const ImageBox: React.FC<ImageBoxProps> = ({ imgsrc, heading, content }) => {

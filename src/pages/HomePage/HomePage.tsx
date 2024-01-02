@@ -7,9 +7,8 @@ import IconSpectialistTeam from "../../assets/icon-webspecialists-sofatechnologi
 import IconPartnership from "../../assets/icon-partnership-sofatechnologies.png";
 // Banners
 import EarthImg from "../../assets/background-earth-01-sofatechnologies.webp";
-import BackgroundBannerImg from "../../assets/background-banner-transparent-backround.png";
-import HappyCustomerImg from "../../assets/pexels-alphatradezone-5833244.jpg";
-import HappyCustomer2Img from "../../assets/pexels-karolina-grabowska-5717839.jpg";
+import BackgroundBannerImg from "../../assets/background-banner-transparent-backround.webp";
+
 // Clients
 import Partner1 from "../../assets/partners/partner-artmageddon-sofatechnologies.png";
 import Partner2 from "../../assets/partners/partner-gentlemanshop-sofatechnologies.png";
@@ -24,7 +23,6 @@ import Partner8 from "../../assets/partners/partner-vending4all-sofatechnologies
 import ImageBox from "../../components/ImageBox/ImageBox";
 import Title from "../../components/Title/Title";
 import ImagesRow from "../../components/ImageRow/ImageRow";
-import ResponsiveParallaxBanner from "../../components/ResponsiveParallaxBanner/ResponsiveParallaxBanner";
 import Card from "../../components/Card/Card";
 import Header from "../../components/Header/Header";
 
@@ -171,6 +169,13 @@ const HomePage = () => {
           />
           <ImagesRow imageUrls={[Partner1, Partner2, Partner3, Partner4, Partner5, Partner6, Partner7, Partner8]} />
         </div>
+      </section>
+      <section>
+        <img
+          src={BackgroundBannerImg}
+          alt="Background for partners banner"
+          className="w-full"
+        />
       </section>
     </>
   );

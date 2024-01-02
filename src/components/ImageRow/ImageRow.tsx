@@ -6,18 +6,15 @@ type ImagesRowProps = {
 
 const ImagesRow: React.FC<ImagesRowProps> = ({ imageUrls }) => {
   return (
-    <div className="grid grid-cols-8 w-full justify-items-center">
-      {imageUrls.map(
-        (url: string, index: number) =>
-          index < 8 && (
-            <img
-              key={index}
-              src={url}
-              alt={`Image ${index}`}
-              className="rounded-2xl"
-            />
-          )
-      )}
+    <div className="flex w-full justify-content-evenly">
+      {imageUrls.map((url: string, index: number) => (
+        <img
+          key={index}
+          src={url}
+          alt={`Image ${index}`}
+          className="rounded-2xl"
+        />
+      ))}
     </div>
   );
 };

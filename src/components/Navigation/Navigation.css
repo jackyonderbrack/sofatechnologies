@@ -57,3 +57,15 @@ nav {
   gap: 2rem;
   padding: 0.5rem;
 }
+
+@media (max-width: 600px) {
+  .mainLogoContainer {
+    padding: 0.5rem;
+  }
+  .mainLogoImg {
+    width: 1rem;
+  }
+  #NavigationHeaderBottom {
+    display: none;
+  }
+}

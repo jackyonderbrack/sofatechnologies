@@ -5,6 +5,7 @@ import ContactPage from "./pages/ContactPage/ContactPage";
 import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import SolutionsPage from "./pages/SolutionsPage/SolutionsPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +25,16 @@ function App() {
         <>
           <Navigation />
           <HomePage />
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/solutions",
+      element: (
+        <>
+          <Navigation />
+          <SolutionsPage />
           <Footer />
         </>
       ),

@@ -39,6 +39,10 @@
   background-clip: text;
 }
 
+.content {
+  padding: 1rem 4rem;
+}
+
 a {
   font-weight: 500;
   color: var(--light-color);
@@ -461,6 +465,15 @@ button:focus-visible {
 }
 
 @media (max-width: 1200px) {
+  .content {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 1rem 0.2rem;
+  }
 }
 
 .background-top {
