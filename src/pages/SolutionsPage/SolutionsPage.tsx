@@ -1,5 +1,5 @@
 const SolutionsPage = () => {
-  return <div>SolutionsPage</div>;
+  return <div>Za niedługo dodamy treść</div>;
 };
 
 export default SolutionsPage;

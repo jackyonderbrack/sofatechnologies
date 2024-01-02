@@ -19,16 +19,6 @@ function App() {
       ),
     },
     {
-      path: "/rozwiazania",
-      element: (
-        <>
-          <Navigation />
-          <SolutionsPage />
-          <Footer />
-        </>
-      ),
-    },
-    {
       path: "/kontakt",
       element: (
         <>

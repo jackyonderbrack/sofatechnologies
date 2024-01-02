@@ -23,7 +23,6 @@ const Navigation: React.FC = () => {
         </div>
         <div id="NavigationHeaderBottom">
           <Link to="/">Strona główna</Link>
-          <Link to="/rozwiazania">Rozwiązania</Link>
           <Link to="/kontakt">Kontakt</Link>
         </div>
       </div>
