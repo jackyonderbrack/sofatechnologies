@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactForm.css";
 import { useContactFormik } from "../../utils/useFormikConfig";
 
 const ContactForm: React.FC = () => {
+  const [submitErrorStatus, setSubmitErrorStatus] = useState("");
+  const [submitSuccessStatus, setSubmitSuccessStatus] = useState("");
   const formik = useContactFormik(async (formData) => {
     try {
       const response = await fetch(`https://sofatechnologies.com/api/contact-form/send-email`, {
@@ -10,17 +12,25 @@ const ContactForm: React.FC = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData), // Użyj formData zamiast values
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
         const responseData = await response.text();
         console.log(responseData);
+
+        formik.resetForm();
+        setSubmitErrorStatus("");
+        setSubmitSuccessStatus("Poszło! Do usłyszenia.");
       } else {
         console.error("Błąd serwera:", response.status);
+        setSubmitErrorStatus("Błąd serwera, spróbuj ponownie");
+        setSubmitSuccessStatus("");
       }
     } catch (error) {
       console.error("Błąd podczas wysyłania formularza:", error);
+      setSubmitErrorStatus("Błąd wysyłania, spróbuj ponownie");
+      setSubmitSuccessStatus("");
     }
   });
 
@@ -30,27 +40,27 @@ const ContactForm: React.FC = () => {
         <div className="input-field">
           <input
             type="text"
-            name="contactFormUser"
+            name="contactFormClientName"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            value={formik.values.contactFormUser}
+            value={formik.values.contactFormClientName}
             placeholder="Jak się nazywasz?"
           />
-          {formik.touched.contactFormUser && formik.errors.contactFormUser ? (
-            <p className="error-message">{formik.errors.contactFormUser}</p>
+          {formik.touched.contactFormClientName && formik.errors.contactFormClientName ? (
+            <p className="error-message">{formik.errors.contactFormClientName}</p>
           ) : null}
         </div>
         <div className="input-field">
           <input
             type="email"
-            name="contactFormEmail"
+            name="contactFormClientEmail"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            value={formik.values.contactFormEmail}
+            value={formik.values.contactFormClientEmail}
             placeholder="Twój e-mail"
           />
-          {formik.touched.contactFormEmail && formik.errors.contactFormEmail ? (
-            <p className="error-message">{formik.errors.contactFormEmail}</p>
+          {formik.touched.contactFormClientEmail && formik.errors.contactFormClientEmail ? (
+            <p className="error-message">{formik.errors.contactFormClientEmail}</p>
           ) : null}
         </div>
         <div className="input-field">
@@ -67,6 +77,8 @@ const ContactForm: React.FC = () => {
         </div>
 
         <div className="submitArea">
+          {submitSuccessStatus && <p className="submit-success-status">{submitSuccessStatus}</p>}
+          {submitErrorStatus && <p className="submit-error-status">{submitErrorStatus}</p>}
           <button
             type="submit"
             className="btn-secondary">
