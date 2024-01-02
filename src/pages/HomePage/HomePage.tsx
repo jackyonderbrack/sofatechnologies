@@ -6,7 +6,7 @@ import IconMobileApps from "../../assets/icon-mobileapps-sofatechnologies.png";
 import IconSpectialistTeam from "../../assets/icon-webspecialists-sofatechnologies.png";
 import IconPartnership from "../../assets/icon-partnership-sofatechnologies.png";
 // Banners
-import EarthImg from "../../assets/background-earth-01-sofatechnologies.png";
+import EarthImg from "../../assets/background-earth-01-sofatechnologies.webp";
 import BackgroundBannerImg from "../../assets/background-banner-transparent-backround.png";
 import HappyCustomerImg from "../../assets/pexels-alphatradezone-5833244.jpg";
 import HappyCustomer2Img from "../../assets/pexels-karolina-grabowska-5717839.jpg";
@@ -171,27 +171,6 @@ const HomePage = () => {
           />
           <ImagesRow imageUrls={[Partner1, Partner2, Partner3, Partner4, Partner5, Partner6, Partner7, Partner8]} />
         </div>
-      </section>
-      <section id="ParallaxBanner">
-        <ResponsiveParallaxBanner
-          imgPosition="right"
-          text={
-            <div className="content">
-              <h1 className="main_header">Dołącz do grona zadowolnych klientów</h1>
-
-              <p>
-                <span>
-                  Wszystkie nasze realizacje są realnymi projektami, którymi klienci się cieszą, zarządzają i wykorzystują w swoim biznesie,
-                  chwaląc sie zaś swoim potencjalnym klientom. Mimo tego, że każdy projekt zakładał inny scenariusz, wszystkie są
-                  responsywne i dostosowane do warunków dzisiejszego webView.
-                </span>
-              </p>
-            </div>
-          }
-          imageUrl={HappyCustomerImg}
-          image2Url={HappyCustomer2Img}
-          backgroundUrl={BackgroundBannerImg}
-        />
       </section>
     </>
   );

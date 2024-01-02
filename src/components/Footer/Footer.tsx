@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer
       id="Footer"
-      className="background-top">
+      className="background-top px-4">
       <section className="footerHeader grid grid-cols-4 justify-items-center align-items-center gap-2 px-4 py-2">
         <div className="footerHeaderCol">
           <Link

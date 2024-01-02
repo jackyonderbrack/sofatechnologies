@@ -1,7 +1,7 @@
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Header from "../../components/Header/Header";
 import "./ContactPage.css";
-import ContactImg from "../../assets/background-letters-01-sofatechnologies.png";
+import ContactImg from "../../assets/background-letters-01-sofatechnologies.webp";
 
 const ContactPage = () => {
   return (
@@ -17,11 +17,11 @@ const ContactPage = () => {
         }
         imgUrl={ContactImg}
       />
-      <div className="contactPageLayout grid grid-cols-2 gap-4">
+      <div className="contactPageLayout grid grid-cols-2 gap-4 background-top py-4">
         <div>
           <ContactForm />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
           <h3>INFORMACJE DODATKOWE</h3>
           <p>Jeśli masz jakiekolwiek pytania zawsze możesz napisać do nas zwykły prosty e-mail</p>
           <h4>sofatechnologies@gmail.com</h4>
