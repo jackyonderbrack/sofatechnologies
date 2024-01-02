@@ -3,11 +3,21 @@ import "./App.css";
 import HomePage from "./pages/HomePage/HomePage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import Navigation from "./components/Navigation/Navigation";
-import SolutionsPage from "./pages/SolutionsPage/SolutionsPage";
 import Footer from "./components/Footer/Footer";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
   const router = createBrowserRouter([
+    {
+      path: "*",
+      element: (
+        <>
+          <Navigation />
+          <NotFoundPage />
+          <Footer />
+        </>
+      ),
+    },
     {
       path: "/",
       element: (
