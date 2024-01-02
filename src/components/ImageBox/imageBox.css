@@ -20,7 +20,8 @@ img {
   width: 6rem;
 }
 
-.divider {
+.icon-box-divider {
+  margin-top: 1rem;
   width: 5rem;
   height: 0.5rem;
   background-color: var(--secondary-dark-color);
