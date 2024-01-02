@@ -30,7 +30,7 @@ function App() {
       ),
     },
     {
-      path: "/solutions",
+      path: "/rozwiazania",
       element: (
         <>
           <Navigation />

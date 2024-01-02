@@ -474,6 +474,9 @@ button:focus-visible {
   .content {
     padding: 1rem 0.2rem;
   }
+  .flex {
+    flex-direction: column;
+  }
 }
 
 .background-top {

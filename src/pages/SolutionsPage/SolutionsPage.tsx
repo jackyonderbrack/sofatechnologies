@@ -1,7 +1,8 @@
 import Header from "../../components/Header/Header";
 import PuzzlesImg from "../../assets/background-puzzles-01-sofatechnologies.webp";
 import ImageBox from "../../components/ImageBox/ImageBox";
-import ImagesRow from "../../components/ImageRow/ImageRow";
+
+import "./SolutionsPage.css";
 
 // Icons imports
 import IconCustomWebSites from "../../assets/icon-webadjustment-sofatechnologies.webp";
@@ -18,7 +19,39 @@ import IntegrationShopGold from "../../assets/integrations/integrations-shopgold
 import IntegrationInPost from "../../assets/integrations/integrations-inpost-light-sofatechnologies.webp";
 import IntegrationCyberFolks from "../../assets/integrations/integrations-cyberfolks-light-sofatechnologies.webp";
 
+// Technologies
+import TechnologyAngular from "../../assets/technologies/solutions-agular-sofatechnologies.webp";
+import TechnologyExpress from "../../assets/technologies/solutions-expressjs-light-sofatechnologies.webp";
+import TechnologyGolang from "../../assets/technologies/solutions-go-sofatechnologies.webp";
+import TechnologyLitelements from "../../assets/technologies/solutions-lit-elements-light-sofatechnologies.webp";
+import TechnologyMongodb from "../../assets/technologies/solutions-mongodb-light-sofatechnologies.webp";
+import TechnologyNodejs from "../../assets/technologies/solutions-nodejs-light-sofatechnologies.webp";
+import TechnologyReactjs from "../../assets/technologies/solutions-react-sofatechnologies.webp";
+import TechnologySharepoint from "../../assets/technologies/solutions-sharepoint-light-sofatechnologies.webp";
+
 const SolutionsPage = () => {
+  const _integrationsContents = [
+    { url: IntegrationAllegro, alt: "Allegro" },
+    { url: IntegrationBaseLinker, alt: "BaseLinker" },
+    { url: IntegrationPresta, alt: "PrestaShop" },
+    { url: IntegrationWordpress, alt: "WordPress" },
+    { url: IntegrationWooCommerce, alt: "WooCommerce" },
+    { url: IntegrationShopGold, alt: "ShopGold" },
+    { url: IntegrationInPost, alt: "InPost" },
+    { url: IntegrationCyberFolks, alt: "CyberFolks" },
+  ];
+
+  const _technologyContents = [
+    { url: TechnologyAngular, alt: "Angular" },
+    { url: TechnologyExpress, alt: "Express.js" },
+    { url: TechnologyGolang, alt: "Golang" },
+    { url: TechnologyLitelements, alt: "Litelements" },
+    { url: TechnologyMongodb, alt: "MongoDB" },
+    { url: TechnologyNodejs, alt: "Node.js" },
+    { url: TechnologyReactjs, alt: "React.js" },
+    { url: TechnologySharepoint, alt: "SharePoint" },
+  ];
+
   const _solutionsContents_ImageBox = [
     {
       imgsrc: IconCustomWebSites,
@@ -127,11 +160,30 @@ const SolutionsPage = () => {
           </div>
         </div>
       </section>
-      <section className="background-top content py-4 flex  flex-col align-items-center">
-        <h3>Tworzymy integracje do:</h3>
-        <div className="grid grid-rows-2">
-          <ImagesRow imageUrls={[IntegrationAllegro, IntegrationBaseLinker, IntegrationPresta, IntegrationWordpress]} />
-          <ImagesRow imageUrls={[IntegrationWooCommerce, IntegrationShopGold, IntegrationInPost, IntegrationCyberFolks]} />
+      <section className="background-top content py-4 flex justify-content-evenly">
+        <div className="flex flex-col align-items-center">
+          <h3>Tworzymy integracje do:</h3>
+          <div className="imageRows integrations grid grid-cols-4">
+            {_integrationsContents.map((integration) => (
+              <img
+                src={integration.url}
+                alt={integration.alt}
+                className="p-2"
+              />
+            ))}
+          </div>
+        </div>
+        <div className="flex flex-col align-items-center">
+          <h3>Technologia, na której się znamy:</h3>
+          <div className="imageRows technology grid grid-cols-4 ">
+            {_technologyContents.map((technology) => (
+              <img
+                src={technology.url}
+                alt={technology.alt}
+                className="p-2"
+              />
+            ))}
+          </div>
         </div>
       </section>
     </>
