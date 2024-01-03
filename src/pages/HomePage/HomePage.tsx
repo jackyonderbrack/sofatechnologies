@@ -7,7 +7,6 @@ import IconSpectialistTeam from "../../assets/icon-webspecialists-sofatechnologi
 import IconPartnership from "../../assets/icon-partnership-sofatechnologies.png";
 // Banners
 import EarthImg from "../../assets/background-earth-01-sofatechnologies.webp";
-import BackgroundBannerImg from "../../assets/background-banner-transparent-backround.webp";
 
 // Clients
 import Partner1 from "../../assets/partners/partner-artmageddon-sofatechnologies.png";
