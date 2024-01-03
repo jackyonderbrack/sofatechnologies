@@ -6,7 +6,7 @@ type ImagesRowProps = {
 
 const ImagesRow: React.FC<ImagesRowProps> = ({ imageUrls }) => {
   return (
-    <div className="flex w-full justify-content-evenly">
+    <div className="grid grid-cols-8 w-full justify-items-center">
       {imageUrls.map((url: string, index: number) => (
         <img
           key={index}

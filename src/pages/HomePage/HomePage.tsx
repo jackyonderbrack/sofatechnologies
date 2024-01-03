@@ -170,13 +170,6 @@ const HomePage = () => {
           <ImagesRow imageUrls={[Partner1, Partner2, Partner3, Partner4, Partner5, Partner6, Partner7, Partner8]} />
         </div>
       </section>
-      <section>
-        <img
-          src={BackgroundBannerImg}
-          alt="Background for partners banner"
-          className="w-full"
-        />
-      </section>
     </>
   );
 };

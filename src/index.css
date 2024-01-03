@@ -327,27 +327,6 @@ button:focus-visible {
   grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 
-@media (max-width: 1200px) {
-  .grid-cols-8 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .grid-cols-4 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 720px) {
-  .grid-cols-8 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-4 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-}
-
 /* Gap Configuration */
 .gap-1 {
   gap: 1rem;
@@ -464,18 +443,45 @@ button:focus-visible {
   width: clamp(300px, 50%, 1200px);
 }
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
+  .grid-cols-8 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .content {
     padding: 2rem 2rem;
   }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  .grid-cols-8 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .content {
     padding: 1rem 0.2rem;
   }
-  .flex {
-    flex-direction: column;
+}
+
+@media only screen and (max-width: 480px) {
+  .grid-cols-8 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .content {
+    padding: 1rem 0.2rem;
   }
 }
 

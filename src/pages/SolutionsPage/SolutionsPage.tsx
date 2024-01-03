@@ -160,10 +160,10 @@ const SolutionsPage = () => {
           </div>
         </div>
       </section>
-      <section className="background-top content py-4 flex justify-content-evenly">
+      <section className="background-top content py-4 grid grid-cols-2 justify-content-evenly gap-2">
         <div className="flex flex-col align-items-center">
           <h3>Tworzymy integracje do:</h3>
-          <div className="imageRows integrations grid grid-cols-4">
+          <div className="imageRows integrations w-full flex flex-wrap justify-content-center">
             {_integrationsContents.map((integration) => (
               <img
                 src={integration.url}
@@ -175,7 +175,7 @@ const SolutionsPage = () => {
         </div>
         <div className="flex flex-col align-items-center">
           <h3>Technologia, na której się znamy:</h3>
-          <div className="imageRows technology grid grid-cols-4 ">
+          <div className="imageRows technology flex flex-wrap justify-content-center">
             {_technologyContents.map((technology) => (
               <img
                 src={technology.url}
