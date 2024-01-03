@@ -164,8 +164,9 @@ const SolutionsPage = () => {
         <div className="flex flex-col align-items-center">
           <h3>Tworzymy integracje do:</h3>
           <div className="imageRows integrations w-full flex flex-wrap justify-content-center">
-            {_integrationsContents.map((integration) => (
+            {_integrationsContents.map((integration, index) => (
               <img
+                key={index}
                 src={integration.url}
                 alt={integration.alt}
                 className="p-2"
@@ -176,8 +177,9 @@ const SolutionsPage = () => {
         <div className="flex flex-col align-items-center">
           <h3>Technologia, na której się znamy:</h3>
           <div className="imageRows technology flex flex-wrap justify-content-center">
-            {_technologyContents.map((technology) => (
+            {_technologyContents.map((technology, index) => (
               <img
+                key={index}
                 src={technology.url}
                 alt={technology.alt}
                 className="p-2"

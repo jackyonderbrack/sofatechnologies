@@ -14,7 +14,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({ imgsrc, heading, content }) => {
       />
       <h3>{heading}</h3>
       <div className="icon-box-divider" />
-      <p className="icon-box-content">{content}</p>
+      <div className="icon-box-content">{content}</div>
     </div>
   );
 };

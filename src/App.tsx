@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import SolutionsPage from "./pages/SolutionsPage/SolutionsPage";
+import { ScrollToTop } from "./utils/ScrollToTop";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,6 +14,7 @@ function App() {
       path: "*",
       element: (
         <>
+          <ScrollToTop />
           <Navigation />
           <NotFoundPage />
           <Footer />
@@ -23,6 +25,7 @@ function App() {
       path: "/",
       element: (
         <>
+          <ScrollToTop />
           <Navigation />
           <HomePage />
           <Footer />
@@ -33,6 +36,7 @@ function App() {
       path: "/rozwiazania",
       element: (
         <>
+          <ScrollToTop />
           <Navigation />
           <SolutionsPage />
           <Footer />
@@ -43,6 +47,7 @@ function App() {
       path: "/kontakt",
       element: (
         <>
+          <ScrollToTop />
           <Navigation />
           <ContactPage />
           <Footer />
