@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage/HomePage";
 import ContactPage from "./pages/ContactPage/ContactPage";
@@ -7,55 +7,34 @@ import Footer from "./components/Footer/Footer";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import SolutionsPage from "./pages/SolutionsPage/SolutionsPage";
 import { ScrollToTop } from "./utils/ScrollToTop";
+import AniTransition from "./utils/AniTransition/AniTransition";
+
+function Layout() {
+  return (
+    <>
+      <ScrollToTop />
+      <Navigation />
+      <AniTransition>
+        <Outlet />
+      </AniTransition>
+      <Footer />
+    </>
+  );
+}
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: "*",
-      element: (
-        <>
-          <ScrollToTop />
-          <Navigation />
-          <NotFoundPage />
-          <Footer />
-        </>
-      ),
-    },
-    {
       path: "/",
-      element: (
-        <>
-          <ScrollToTop />
-          <Navigation />
-          <HomePage />
-          <Footer />
-        </>
-      ),
-    },
-    {
-      path: "/rozwiazania",
-      element: (
-        <>
-          <ScrollToTop />
-          <Navigation />
-          <SolutionsPage />
-          <Footer />
-        </>
-      ),
-    },
-    {
-      path: "/kontakt",
-      element: (
-        <>
-          <ScrollToTop />
-          <Navigation />
-          <ContactPage />
-          <Footer />
-        </>
-      ),
+      element: <Layout />,
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: "rozwiazania", element: <SolutionsPage /> },
+        { path: "kontakt", element: <ContactPage /> },
+        { path: "*", element: <NotFoundPage /> },
+      ],
     },
   ]);
-
   return (
     <div id="App">
       <RouterProvider router={router} />

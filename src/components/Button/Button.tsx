@@ -1,17 +1,28 @@
-import { Link } from 'react-router-dom';
-import './button.css';
+import { Link, useNavigate } from "react-router-dom";
+import "./button.css";
+import useAnimateTransition from "../../utils/AniTransition/useAnimateTransition";
 
 type ButtonProps = {
   linkTo: string;
   buttonText: string;
-  theme: 'btn-primary' | 'btn-secondary';
+  theme: "btn-primary" | "btn-secondary";
 };
 
 const Button: React.FC<ButtonProps> = ({ linkTo, buttonText, theme }) => {
+  const navigate = useNavigate();
+  const { triggerAnimation } = useAnimateTransition();
+  const handleClick = () => {
+    triggerAnimation();
+    setTimeout(() => {
+      navigate(linkTo);
+    }, 300); // Taki sam czas, jak długość trwania animacji
+  };
   return (
-    <Link to={linkTo} className={theme}>
+    <button
+      onClick={handleClick}
+      className={theme}>
       {buttonText}
-    </Link>
+    </button>
   );
 };
 
