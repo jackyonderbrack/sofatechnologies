@@ -11,12 +11,9 @@ https://sofatechnologies.com
 
 ## Instalacja
 
-Aby zainstalować i uruchomić ten projekt lokalnie, wykonaj następujące kroki:
-
-**Sklonuj repozytorium** na swoje lokalne środowisko za pomocą polecenia:
+Aby zainstalować i uruchomić ten projekt lokalnie, po ściągnięciu / clone paczki - wykonaj następujące kroki:
 
 ```bash
-git clone https://github.com/jackyonderbrack/sofatechnologies-frontend.git
 
 cd sofatechnologies-frontend
 npm install
