@@ -13,7 +13,7 @@ https://sofatechnologies.com
 
 Aby zainstalować i uruchomić ten projekt lokalnie, wykonaj następujące kroki:
 
-**Sklonuj repozytorium**: Sklonuj to repozytorium na swoje lokalne środowisko za pomocą polecenia:
+**Sklonuj repozytorium** na swoje lokalne środowisko za pomocą polecenia:
 
 ```bash
 git clone https://github.com/jackyonderbrack/sofatechnologies-frontend.git
