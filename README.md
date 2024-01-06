@@ -1,6 +1,6 @@
 # Sofatechnologies Frontend
 
-![Logo Sofatechnologies](/src/assets/sofatechnologies-f5b642-b.png)
+![Logo Sofatechnologies](/src/assets/sofatechnologies-logo-email.png)
 
 ## Opis Projektu
 
