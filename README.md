@@ -44,7 +44,10 @@ Projekt wykorzystuje następujące technologie i biblioteki:
 - Inne: Lokalforage, React Parallax, React Transition Group, itp.
 
 Witrynę serwuje nginx.
-Api do formularza kontaktowego serwuje Node + ExpressTS z funkcjonalnościami nodemailera.
+
+## API
+
+API do formularza kontaktowego serwuje Node + ExpressTS z funkcjonalnościami nodemailera.
 Strona backendowa projektu jeszcze nie została udostępniona.
 
 ## Autor
