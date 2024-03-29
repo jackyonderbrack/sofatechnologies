@@ -90,7 +90,7 @@ const HomePage = () => {
           />
         ))}
       </section>
-      <section className="background-top my-1 py-2">
+      <section className="background-top my-1 py-4">
         <div className="flex flex-col justify-content-center align-items-center">
           <h2>
             Sprawdź niektóre nasze <span className="text-gradient">realizacje</span>
@@ -102,7 +102,7 @@ const HomePage = () => {
           </p>
           <h4>Wybierz i zobacz nasze projekty na żywo</h4>
         </div>
-        <div className="grid grid-cols-4 justify-items-center gap-2">
+        <div className="p-4 flex flex-1 flex-wrap justify-center gap-4">
           <Card
             title="Gentleman Shop"
             description="SKLEP I BLOG"
@@ -154,8 +154,8 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="w-full background-top py-4">
-        <div className="flex flex-col align-items-center">
+      <section className="background-top pt-2 pb-6">
+        <div className="flex flex-col align-items-center pb-6">
           <Title
             gradientHeader="Nasi klienci"
             leadHeader={null}

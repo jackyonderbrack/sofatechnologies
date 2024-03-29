@@ -17,7 +17,7 @@ const ContactPage = () => {
         }
         imgUrl={ContactImg}
       />
-      <div className="contactPageLayout grid grid-cols-2 gap-4 background-top py-4">
+      <div className="contactPageLayout grid grid-cols-2 gap-4 background-top pt-4 pb-8">
         <div>
           <ContactForm />
         </div>

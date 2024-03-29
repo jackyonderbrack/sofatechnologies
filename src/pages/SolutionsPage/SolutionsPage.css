@@ -1,12 +1,9 @@
 .imageRows img {
-  border: 1px dashed rgb(65, 65, 65);
-  border-radius: 0.5rem;
-  margin: 2dvw 3dvw;
-  width: 9rem;
+  flex: 1 1 25%;
+  max-width: 20%;
 }
 .imageRows {
-  border: 1px solid rgb(80, 80, 80);
-  border-radius: 1.5rem;
-  padding: 1dvw 0;
+  padding: 1dvw 1rem;
   margin-top: 1rem;
+  gap: 1rem;
 }
