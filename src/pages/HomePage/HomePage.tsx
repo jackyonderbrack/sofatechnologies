@@ -26,7 +26,7 @@ import Card from "../../components/Card/Card";
 import Header from "../../components/Header/Header";
 
 // Images
-import PortfolioGentlemanShopImg from "../../assets/portfolio/porfolio-gentlemanshop-sofatechnologies.png";
+import PortfolioSkinsnImg from "../../assets/portfolio/porfolio-skinsn-sofatechnologies.jpg";
 import PortfolioRestauracjaLesnaPerlaImg from "../../assets/portfolio/porfolio-lesnaperla-main-sofatechnologies.png";
 import PorftolioNatarasieImg from "../../assets/portfolio/porfolio-natarasie-sofatechnologies.png";
 import PortfolioVending4AllImg from "../../assets/portfolio/porfolio-vending4all-sofatechnologies.png";
@@ -96,36 +96,37 @@ const HomePage = () => {
             Sprawdź niektóre nasze <span className="text-gradient">realizacje</span>
           </h2>
           <p className="text-align-center container">
-            Wszystkie nasze realizacje są <strong>realnymi</strong> projektami, którymi klienci się cieszą, zarządzają i wykorzystują w
-            swoim biznesie, chwaląc sie zaś swoim potencjalnym klientom. Mimo tego, że każdy projekt zakładał inny scenariusz, wszystkie są
-            <strong>responsywne i dostosowane</strong> do warunków dzisiejszego Web-view.
+            Wszystkie nasze realizacje są <strong>realnymi</strong> projektami, którymi klienci się cieszą, zarządzają i
+            wykorzystują w swoim biznesie, chwaląc sie zaś swoim potencjalnym klientom. Mimo tego, że każdy projekt
+            zakładał inny scenariusz, wszystkie są
+            <strong> responsywne i dostosowane</strong> do warunków dzisiejszego Web-view.
           </p>
           <h4>Wybierz i zobacz nasze projekty na żywo</h4>
         </div>
         <div className="p-4 flex flex-1 flex-wrap justify-center gap-4">
           <Card
-            title="Gentleman Shop"
-            description="SKLEP I BLOG"
-            imageUrl={PortfolioGentlemanShopImg}
-            buttonLink="http://gentlemanshop.pl"
+            title="SKIN Simply Nutrition"
+            description="SKLEP I KOSMETOLOGIA"
+            imageUrl={PortfolioSkinsnImg}
+            buttonLink="https://skinsn.eu"
           />
           <Card
             title="Leśna Perła"
-            description="WITRYNA RESTARUACJI"
+            description="DOM PRZYJĘĆ"
             imageUrl={PortfolioRestauracjaLesnaPerlaImg}
-            buttonLink="http://restauracjalesnaperla.pl"
+            buttonLink="https://lesna-perla.pl"
           />
           <Card
             title="Na Tarasie"
-            description="WITRYNA INTERNETOWA"
+            description="BRANŻA OGRODNICZA"
             imageUrl={PorftolioNatarasieImg}
-            buttonLink="http://natarasie.eu"
+            buttonLink="https://natarasie.eu"
           />
           <Card
             title="Vending 4 All"
             description="WIZYTÓWKA PRODUCENTA"
             imageUrl={PortfolioVending4AllImg}
-            buttonLink="http://vending4all.eu"
+            buttonLink="https://vending4all.eu"
           />
           <Card
             title="Men’s World"
@@ -137,19 +138,19 @@ const HomePage = () => {
             title="Metkom"
             description="STRONA, BLOG, KATALOG"
             imageUrl={PortfolioMetkomImg}
-            buttonLink="http://metkom.com.pl"
+            buttonLink="https://metkom.com.pl"
           />
           <Card
             title="Artmageddon"
             description="WIZYTÓWKA STUDIA TATUAŻU"
             imageUrl={PortfolioArtmageddonImg}
-            buttonLink="http://artmageddon.pl"
+            buttonLink="https://artmageddon.pl"
           />
           <Card
             title="Holistic Spa"
             description="GABINET SPECJALISTYCZNY"
             imageUrl={PortfolioHolisticSpaImg}
-            buttonLink="http://spaslask.pl"
+            buttonLink="https://spaslask.pl"
           />
         </div>
       </section>
