@@ -30,10 +30,16 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .text-gradient {
-  background: linear-gradient(120deg, var(--gradien-light-color-mid) 0%, var(--warning-color) 50%, var(--secondary-light-color) 100%);
+  background: linear-gradient(
+    120deg,
+    var(--gradien-light-color-mid) 0%,
+    var(--warning-color) 50%,
+    var(--secondary-light-color) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
