@@ -105,7 +105,7 @@ nav {
   .navigation-active {
     display: flex;
     position: fixed;
-    width: 150px;
+    width: 200px;
     height: 100dvh;
     text-align: left;
     border-top-left-radius: 0;
