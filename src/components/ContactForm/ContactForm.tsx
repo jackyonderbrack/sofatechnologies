@@ -63,13 +63,14 @@ const ContactForm: React.FC = () => {
             <p className="error-message">{formik.errors.contactFormClientEmail}</p>
           ) : null}
         </div>
-        <div className="input-field">
+        <div className="input-field" >
           <textarea
             name="contactFormMessage"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.contactFormMessage}
             placeholder="O co chcesz zapytać?"
+            style={{fontFamily: "inherit"}}
           />
           {formik.touched.contactFormMessage && formik.errors.contactFormMessage ? (
             <p className="error-message">{formik.errors.contactFormMessage}</p>

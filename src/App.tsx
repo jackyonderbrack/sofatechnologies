@@ -31,7 +31,7 @@ function App() {
         { index: true, element: <HomePage /> },
         { path: "rozwiazania", element: <SolutionsPage /> },
         { path: "kontakt", element: <ContactPage /> },
-        { path: "*", element: <NotFoundPage /> },
+        { path: "**", element: <NotFoundPage /> },
       ],
     },
   ]);
