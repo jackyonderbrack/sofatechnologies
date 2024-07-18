@@ -41,25 +41,25 @@ const HomePage = () => {
       imgsrc: IconDedidcatedSolutions,
       heading: "Dedykowane rozwiązania",
       content:
-        "Mamy doświadczenie w tworzeniu systemów zarządzania produkcją,    zasobami, ale również interaktywnych gier, programów i sieci.",
+        "Mamy doświadczenie w tworzeniu systemów zarządzania produkcją, zasobami, ale również interaktywnych gier, programów i sieci. Nasze rozwiązania są dostosowane do specyficznych potrzeb klienta, zapewniając elastyczność, skalowalność i integrację z istniejącymi systemami.",
     },
     {
       imgsrc: IconMobileApps,
       heading: "Aplikacje mobilne",
       content:
-        "Projektujemy zaawansowane aplikacje mobilne dla systemów iOS i Android. Zapewniamy intuicyjny interfejs użytkownika, niezawodny i bezpieczny kod, a także stabilną działalność.",
+        "Projektujemy zaawansowane aplikacje mobilne dla systemów iOS i Android. Zapewniamy intuicyjny interfejs użytkownika, niezawodny i bezpieczny kod, a także stabilną działalność. Nasze aplikacje są zoptymalizowane pod kątem wydajności i bezpieczeństwa, co gwarantuje doskonałe wrażenia użytkownika.",
     },
     {
       imgsrc: IconPartnership,
       heading: "Partnerstwo technologiczne",
       content:
-        "Dostarczamy wszechstronne konsultacje w dziedzinie technologii IT. Naszym celem jest osiągnięcie wyznaczonych rezultatów w ścisłej współpracy z naszymi klientami.",
+        "Dostarczamy wszechstronne konsultacje w dziedzinie technologii IT. Naszym celem jest osiągnięcie wyznaczonych rezultatów w ścisłej współpracy z naszymi klientami. Oferujemy wsparcie na każdym etapie projektu, od planowania, przez wdrożenie, aż po utrzymanie i rozwój.",
     },
     {
       imgsrc: IconSpectialistTeam,
       heading: "Kadra specjalistyczna",
       content:
-        "Projektujemy zaawansowane aplikacje mobilne dla systemów iOS i Android. Zapewniamy intuicyjny interfejs użytkownika, niezawodny i bezpieczny kod, a także stabilną działalność.",
+        "Nasza kadra to zespół wysoko wykwalifikowanych specjalistów, którzy projektują zaawansowane rozwiązania dla systemów iOS i Android. Zapewniamy intuicyjny interfejs użytkownika, niezawodny i bezpieczny kod oraz stabilną działalność aplikacji. Dzięki naszym ekspertom, możemy sprostać najbardziej wymagającym projektom.",
     },
   ];
 
