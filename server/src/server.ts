@@ -11,10 +11,10 @@ const _PORT = process.env.SERVERPORT;
 
 app.use(cors());
 app.use(express.json());
-app.use("/contact-form", sendEmailRoute);
+app.use("/rest/contact-form", sendEmailRoute);
 
 // Healthcheck
-app.get("/ping", (_req, res) => res.status(200).json({ message: "pong" }));
+app.get("/rest/ping", (_req, res) => res.status(200).json({ message: "pong" }));
 
 // Server listen
 app.listen(_PORT, () => Logging.info(`Serwer działa na porcie ${_PORT}`));

@@ -4,7 +4,7 @@
     "module": "CommonJS", // Użyj dynamicznego importu modułów ES.
     "moduleResolution": "node", // Określa strategię rozwiązywania modułów.
     "lib": ["esnext"], // Włącz funkcje biblioteki dla najnowszej wersji ECMAScript.
-    "outDir": "./dist", // Skompilowany JavaScript będzie umieszczony w katalogu dist.
+    "outDir": "./build", // Skompilowany JavaScript będzie umieszczony w katalogu dist.
     "rootDir": "./src", // Główny katalog z plikami źródłowymi TypeScript.
     "esModuleInterop": true, // Umożliwia domyślny import modułów bez default export.
     "forceConsistentCasingInFileNames": true, // Wymusza spójną wielkość liter w nazwach plików.
@@ -26,5 +26,5 @@
     "removeComments": false // Ustaw na true, jeśli chcesz usunąć komentarze w czasie kompilacji.
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"] // Wyklucza katalogi z procesu kompilacji.
+  "exclude": ["node_modules", "build"] // Wyklucza katalogi z procesu kompilacji.
 }
