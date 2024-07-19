@@ -2,8 +2,8 @@ import "./footer.css";
 import Logo from "../../assets/sofatechnologies-f5b642-transparent.png";
 import FacebookSocial from "../../assets/socials/facebook_icon_dark.png";
 import FacebookSocialHover from "../../assets/socials/facebook_icon_dark_hover.png";
-import InstagramSocial from "../../assets/socials/instagram_icon_dark.png";
-import InstagramSocialHover from "../../assets/socials/instagram_icon_dark_hover.png";
+// import InstagramSocial from "../../assets/socials/instagram_icon_dark.png";
+// import InstagramSocialHover from "../../assets/socials/instagram_icon_dark_hover.png";
 import GithubSocial from "../../assets/socials/github_icon_dark.png";
 import GithubSocialHover from "../../assets/socials/github_icon_dark_hover.png";
 
@@ -42,6 +42,9 @@ const Footer = () => {
         <div className="footerHeaderCol">
           <div className="social_icons">
             <div className="socialIconContainer">
+            <a
+                href="https://facebook.com/sofatechnologies"
+                target="_blank">
               <img
                 className="facebookSocialIcon"
                 src={FacebookSocial}
@@ -50,11 +53,12 @@ const Footer = () => {
               <img
                 className="facebookSocialIconHover"
                 src={FacebookSocialHover}
-                alt="Facebook social icon"
+                alt="Facebook social icon hover"
               />
+              </a>
             </div>
 
-            <div className="socialIconContainer">
+            {/* <div className="socialIconContainer">
               <img
                 className="instagramSocialIcon"
                 src={InstagramSocial}
@@ -65,7 +69,7 @@ const Footer = () => {
                 src={InstagramSocialHover}
                 alt="Instagram social icon"
               />
-            </div>
+            </div> */}
 
             <div className="socialIconContainer">
               <a
