@@ -39,7 +39,7 @@ const Navigation: React.FC = () => {
             className="mainLogoContainer">
             <img
               src={Logo}
-              alt="SofaTechnologies"
+              alt="Logo strony"
               className="mainLogoImg"
             />
             <div className="mainLogoContent">

@@ -2,19 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/src/assets/favicon.png" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/src/assets/favicon.png" />
+    <link rel="preload" href="index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="index.css">
+    </noscript>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SOFA Technologies: Tworzenie stron internetowych, sklepów online i usługi IT. Skontaktuj się z nami, aby uzyskać dedykowane rozwiązania dla Twojego biznesu." />
     <title>SOFA Technologies</title>
   </head>
   <body>
     <main id="root"></main>
-    <script
-      type="module"
-      src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

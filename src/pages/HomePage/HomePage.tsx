@@ -26,14 +26,17 @@ import Card from "../../components/Card/Card";
 import Header from "../../components/Header/Header";
 
 // Images
-import PortfolioSkinsnImg from "../../assets/portfolio/porfolio-skinsn-sofatechnologies.jpg";
-import PortfolioRestauracjaLesnaPerlaImg from "../../assets/portfolio/porfolio-lesnaperla-main-sofatechnologies.png";
-import PorftolioNatarasieImg from "../../assets/portfolio/porfolio-natarasie-sofatechnologies.png";
-import PortfolioVending4AllImg from "../../assets/portfolio/porfolio-vending4all-sofatechnologies.png";
-import PortfolioMensworldImg from "../../assets/portfolio/porfolio-mensworldbarbershop-sofatechnologies.png";
-import PortfolioMetkomImg from "../../assets/portfolio/porfolio-metkom-main-sofatechnologies.png";
-import PortfolioArtmageddonImg from "../../assets/portfolio/porfolio-artmageddon-sofatechnologies.png";
-import PortfolioHolisticSpaImg from "../../assets/portfolio/porfolio-spaslask-main-sofatechnologies.png";
+import PortfolioSkinsnImg from "../../assets/portfolio/07_sofatechnologies-skinsn-plock-rybnik-strony.png";
+import PortfolioRestauracjaLesnaPerlaImg from "../../assets/portfolio/03_sofatechnologies-lesnaperla-strony-rybnik-radlin.png";
+import PorftolioNatarasieImg from "../../assets/portfolio/05_sofatechnologies-natarasie-strony-rybnik-zory.png";
+import PortfolioVending4AllImg from "../../assets/portfolio/10_sofatechnologies-vending-strony-rybnik-zory.png";
+import PortfolioMensworldImg from "../../assets/portfolio/04_sofatechnologies-mensworld-barbershop-strony-rybnik.png";
+import PortfolioMetkomImg from "../../assets/portfolio/06_sofatechnologies-metkom-zory-cieszyn-strony-internetowe.png";
+import PortfolioArtmageddonImg from "../../assets/portfolio/01_sofatechnologies-atrmageddon-strony-rybnik.png";
+import PortfolioHolisticSpaImg from "../../assets/portfolio/08_sofatechnologies-holisticspa-spaslask-strony-rybnik-czerwionka-salon.png";
+import PortfolioGentlemanshopImg from "../../assets/portfolio/02_sofatechnologies-gentlemanshop-strony-rybnik.png"
+import PortfolioStolarniaprecyzjaImg from "../../assets/portfolio/09_sofatechnologies-stolarniaprecyzja-spaslask-strony-rybnik-czerwionka-biznes.png"
+import MetaTags from "../../components/MetaTags/MetaTags";
 
 const HomePage = () => {
   const _homeContents_ImageBox = [
@@ -65,6 +68,10 @@ const HomePage = () => {
 
   return (
     <>
+      <MetaTags
+        title="SOFA Technologies - Rybnik"
+        description="SOFA Technologies: Tworzenie stron internetowych, sklepów online i usługi IT. Skontaktuj się z nami, aby uzyskać dedykowane rozwiązania dla Twojego biznesu. Katowice, Rybnik, Żory, Mikołów, Śląsk"
+      />
       <Header
         content={
           <div>
@@ -90,7 +97,7 @@ const HomePage = () => {
           />
         ))}
       </section>
-      <section className="background-top my-1 py-4">
+      <section className="background-top my-3 py-4">
         <div className="flex flex-col justify-content-center align-items-center">
           <h2>
             Sprawdź niektóre nasze <span className="text-gradient">realizacje</span>
@@ -101,14 +108,26 @@ const HomePage = () => {
             zakładał inny scenariusz, wszystkie są
             <strong> responsywne i dostosowane</strong> do warunków dzisiejszego Web-view.
           </p>
-          <h4>Wybierz i zobacz nasze projekty na żywo</h4>
+          <h3>Wybierz i zobacz nasze projekty na żywo</h3>
         </div>
-        <div className="p-4 flex flex-1 flex-wrap justify-center gap-4">
+        <div className="p-4 pt-4 flex flex-1 flex-wrap justify-center gap-4">
           <Card
             title="SKIN Simply Nutrition"
             description="SKLEP I KOSMETOLOGIA"
             imageUrl={PortfolioSkinsnImg}
             buttonLink="https://skinsn.eu"
+          />
+          <Card
+            title="Stolarnia Precyzja"
+            description="WITRYNA BIZNESOWA"
+            imageUrl={PortfolioStolarniaprecyzjaImg}
+            buttonLink="https://stolarniaprecyzja.pl"
+          />
+          <Card
+            title="Gentleman Shop"
+            description="SKLEP BRANŻOWY"
+            imageUrl={PortfolioGentlemanshopImg}
+            buttonLink="https://gentlemanshop.com.pl"
           />
           <Card
             title="Leśna Perła"
