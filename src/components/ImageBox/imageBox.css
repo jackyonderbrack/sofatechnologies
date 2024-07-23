@@ -11,6 +11,15 @@
   flex: 1 1 50%;
 }
 
+.box_image_heading {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  height: 40px;
+  h3 {
+    font-size: 1.05rem;
+  }
+}
+
 #ImageBox:hover {
   border: 1px solid var(--secondary-dark-color);
   background-color: transparent;
@@ -22,8 +31,9 @@ img {
 
 .icon-box-divider {
   margin-top: 1rem;
+  margin-bottom: 0.4rem;
   width: 5rem;
-  height: 0.5rem;
+  height: 0.2rem;
   background-color: var(--secondary-dark-color);
   border-radius: 1rem;
 }
