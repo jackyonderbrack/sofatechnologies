@@ -40,6 +40,6 @@ img {
 
 @media (max-width: 1200px) {
   .ImageBox {
-    flex-basis: 50%; /* Dwa elementy na rząd */
+    flex-basis: 50%;
   }
 }
