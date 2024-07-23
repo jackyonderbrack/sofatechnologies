@@ -90,7 +90,7 @@ const SolutionsPage = () => {
       <MetaTags
        title="SOFA Technologies - Rozwiązania Żory"
        description="Poznaj nasze dedykowane rozwiązania IT: systemy zarządzania produkcją, zasobami oraz interaktywne gry i aplikacje. SOFA Technologies - Tworzenie rozwiązań na miarę Twoich potrzeb."
-     />
+      />
       <Header
         content={
           <div>

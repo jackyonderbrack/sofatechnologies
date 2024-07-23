@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
           ©2024 SofaTechnologies <br /> Wszelkie prawa zastrzeżone.
         </p>
         <p className="contactInfo">
-          <Link to="/polityka-prywatności">* Polityka prywatności</Link>
+          <Link to="/polityka-prywatnosci">* Polityka prywatności</Link>
         </p>
       </div>
 
